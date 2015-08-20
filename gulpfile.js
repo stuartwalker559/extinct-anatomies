@@ -78,3 +78,13 @@ gulp.task('watch', function () {
 gulp.task('default', ['browser-sync', 'watch']);
 
 
+
+/**
+Deploy page to gh-pages
+*/
+var deploy = require("gulp-gh-pages");
+
+gulp.task("deploy", ["jekyll-build"], function () {
+    return gulp.src("./_site/**/*")
+        .pipe(deploy());
+});
