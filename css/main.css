@@ -389,4 +389,6 @@ th {
   opacity: 0.3;
   margin-top: 17em; }
   .arrowDown:hover {
+    -webkit-transition: 0.2s ease-in;
+            transition: 0.2s ease-in;
     opacity: 1; }
