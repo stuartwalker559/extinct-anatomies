@@ -356,7 +356,13 @@ th {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: auto; }
 
 .logoPage {
   display: -webkit-box;
@@ -392,3 +398,142 @@ th {
     -webkit-transition: 0.2s ease-in;
             transition: 0.2s ease-in;
     opacity: 1; }
+
+.portfolio {
+  margin-top: 10em;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+
+.portfolioItem {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  width: 33.333333333%;
+  height: 400px; }
+
+.portfolioTitle {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(50%);
+      -ms-transform: translateY(50%);
+          transform: translateY(50%);
+  right: 50%;
+  -webkit-transform: translateX(50%);
+      -ms-transform: translateX(50%);
+          transform: translateX(50%);
+  z-index: 1;
+  font-size: 2em;
+  border: 5px solid #fff;
+  padding: 10px 40px;
+  color: #fff;
+  margin: 0;
+  -webkit-transition: 0.5s ease-in;
+          transition: 0.5s ease-in;
+  display: none; }
+
+.portfolioItem:hover .portfolioTitle {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+#street {
+  background-image: url("http://36.media.tumblr.com/0419fdddaae87eb8b4895bb085dfb0df/tumblr_npuvp8bx7L1ted1sho1_1280.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-filter: grayscale(20%);
+          filter: grayscale(20%);
+  width: 100%;
+  height: 100%; }
+  #street:hover {
+    -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+    -webkit-transition: 0.2s ease-in;
+            transition: 0.2s ease-in; }
+
+#project {
+  background-image: url("http://40.media.tumblr.com/43daa564405f69589291419dea84d496/tumblr_nr8qtrlwdf1ted1sho1_1280.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-filter: grayscale(20%);
+          filter: grayscale(20%);
+  width: 100%;
+  height: 100%; }
+  #project:hover {
+    -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+    -webkit-transition: 0.2s ease-in;
+            transition: 0.2s ease-in; }
+
+#commercial {
+  background-image: url("http://41.media.tumblr.com/121321823221f4450bcbb12ca1081312/tumblr_npailkZT0D1ted1sho1_1280.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-filter: grayscale(20%);
+          filter: grayscale(20%);
+  width: 100%;
+  height: 100%; }
+  #commercial:hover {
+    -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+    -webkit-transition: 0.2s ease-in;
+            transition: 0.2s ease-in; }
+
+#wedding {
+  background-image: url("https://images.unsplash.com/reserve/QTrNn7DETWGsjyS5L2n5__MG_8345.jpg?q=80&fm=jpg&s=666b63790ca7b6eca72ebb8cf08cfd69");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-filter: grayscale(20%);
+          filter: grayscale(20%);
+  width: 100%;
+  height: 100%; }
+  #wedding:hover {
+    -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+    -webkit-transition: 0.2s ease-in;
+            transition: 0.2s ease-in; }
+
+#portrait {
+  background-image: url("https://images.unsplash.com/photo-1429277158984-614d155e0017?q=80&fm=jpg&s=138f154e17a304b296c953323862633b");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-filter: grayscale(20%);
+          filter: grayscale(20%);
+  width: 100%;
+  height: 100%; }
+  #portrait:hover {
+    -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+    -webkit-transition: 0.2s ease-in;
+            transition: 0.2s ease-in; }
+
+#personal {
+  background-image: url("https://images.unsplash.com/reserve/fPuLkQNXRUKI6HQ2cMPf_IMG_4761.jpg?q=80&fm=jpg&s=cd26d7d6a097e9f77e13b1d18836409e");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-filter: grayscale(20%);
+          filter: grayscale(20%);
+  width: 100%;
+  height: 100%; }
+  #personal:hover {
+    -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+    -webkit-transition: 0.2s ease-in;
+            transition: 0.2s ease-in; }
