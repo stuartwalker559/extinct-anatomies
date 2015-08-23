@@ -1,55 +1,71 @@
-.portfolio
+.portfolioWrapper
     margin-top: 10em
+
+.portfolio
     display: flex
     flex-grow: 1
-    flex-wrap: wrap   
+    flex-wrap: wrap  
+
     
 .portfolioItem
     display: flex
     position: relative
-    width: 33.333333333%
+    min-width: 33.333333333%
     height: 400px
     
 .portfolioTitle
     position: absolute
     top: 50%
-    transform: translateY(50%);
     right: 50%
-    transform: translateX(50%)
+    transform: translate(50%,-50%)
     z-index: 1
     font-size: 2em
     border: 5px solid #fff
-    padding: 10px 40px
+    padding: 10px 30px
     color: #fff
     margin: 0
-    transition: 0.5s ease-in
     display: none
     
 .portfolioItem:hover
     .portfolioTitle
         display: flex
+
+.portfolioCover
+    background-position: center
+    background-repeat: no-repeat
+    background-size: cover
+    width: 100%
+    height: 100%
+    opacity: 0.8
+        
+.portfolioItem:hover
+    .portfolioCover
+        filter: brightness(70%)
+        transition: 0.3s ease
+        opacity: 1
+        
+
     
     
+    
+
+//Portfolio item cover photos
+    
+
 #street
     background-image: url("http://36.media.tumblr.com/0419fdddaae87eb8b4895bb085dfb0df/tumblr_npuvp8bx7L1ted1sho1_1280.jpg")
-    +portfolioCover
     
 #project
     background-image: url("http://40.media.tumblr.com/43daa564405f69589291419dea84d496/tumblr_nr8qtrlwdf1ted1sho1_1280.jpg")
-    +portfolioCover
     
 #commercial
     background-image: url("http://41.media.tumblr.com/121321823221f4450bcbb12ca1081312/tumblr_npailkZT0D1ted1sho1_1280.jpg")
-    +portfolioCover
     
 #wedding
     background-image: url("https://images.unsplash.com/reserve/QTrNn7DETWGsjyS5L2n5__MG_8345.jpg?q=80&fm=jpg&s=666b63790ca7b6eca72ebb8cf08cfd69")
-    +portfolioCover
     
 #portrait
     background-image: url("https://images.unsplash.com/photo-1429277158984-614d155e0017?q=80&fm=jpg&s=138f154e17a304b296c953323862633b")
-    +portfolioCover
     
 #personal
     background-image: url("https://images.unsplash.com/reserve/fPuLkQNXRUKI6HQ2cMPf_IMG_4761.jpg?q=80&fm=jpg&s=cd26d7d6a097e9f77e13b1d18836409e")
-    +portfolioCover
