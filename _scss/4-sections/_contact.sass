@@ -2,7 +2,7 @@
     //margin-top: 10em
 
 .contact
-    padding: 100px 0
+    padding: 100px 0 200px
     background-color: #DDDDDD  
     width: 100%
     
@@ -13,6 +13,15 @@
     margin: 3em auto 0
     color: #999
     font-weight: 500
+    
+.emailLink
+    color: white
+    &:hover
+        color: #575757 
+
+a
+    text-decoration: none
+    
 
 .contact h2
     color: #fff
@@ -50,6 +59,7 @@ form
     
 .messageInput
     width: 100%
+    color: #999
     background-color: transparent
     border: 6px solid #999
     font-size: 1.5em
@@ -64,12 +74,18 @@ form
 .submitInput
     border: none
     background-color: transparent
-    color: #fff
+    color: #999
     outline: none
     text-transform: uppercase
     font-size: 2em
     float: right
     margin-top: 20px
+    padding: 10px 20px
+    border: 6px solid #999
+    background-color: #fff
     
     &:hover
         color: #696969
+        border: 6px solid #696969
+        transition: 0.2s ease
+        background-color: #fff
