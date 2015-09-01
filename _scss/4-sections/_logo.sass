@@ -1,20 +1,28 @@
 .logoPage
-    display: flex
+    position: relative
     height: 100vh
     flex-grow: 1
     background-color: #fff
     align-items: center
     flex-direction: column
+    margin-bottom: 10em
     
 .mainLogo
+    @include absoluteCenter
     color: #000
     font-weight: 100
     font-size: 5em
-    margin-top: 20%
+    text-align: center
+    width: 80%
+    
     
 .arrowDown
+    
+    position: absolute
+    top: 90%
+    left: 50%
+    transform: translate(-50%, -50%)
     opacity: 0.5
-    margin-top: 17em
     padding: 50px
     
     &:hover

@@ -1,0 +1,79 @@
+// Preset Device Widths
+$phoneMaxWidth: 600px
+$tabletMinWidth: 601px
+$tabletMaxWidth: 1050px
+$desktopMinWidth: 1051px
+
+
+//Base Styles
+@include phone
+    .sectionHeading
+        font-size: 50px
+        font-weight: 700
+
+//INDEX.HTML MEDIA QUERIES
+
+//logo Page
+@include phone
+    .mainLogo
+        font-size: 40px
+        display: block
+        margin: 0 auto
+
+//portfolio
+@include phone
+    .portfolioItem
+        width: 100%
+        height: 200px
+    
+    .portfolioCover
+        opacity: 1
+        filter: brightness(70%)
+        
+    .portfolioTitle
+        display: flex
+        border: none
+        font-size: 35px
+        text-transform: uppercase
+    
+@include tablet
+    .portfolioItem
+        width: 50%
+        height: 300px
+    
+    .portfolioCover
+        opacity: 1
+        filter: brightness(70%)
+        
+    .portfolioTitle
+        display: flex
+        border: none
+        font-size: 35px
+        text-transform: uppercase
+        
+//about
+@include phone
+    .videoWrapper
+        width: 100%
+        
+    .aboutVideo
+        height: 100%
+
+@include tablet
+    .videoWrapper
+        width: 100%
+        
+    .aboutVideo
+        height: 100%
+        
+//contact
+@include phone
+    .submitInput
+        color: #4A4A4A
+        padding: 5px 10px
+        
+@include tablet
+    .submitInput
+        color: #4A4A4A
+        padding: 5px 10px
+        
