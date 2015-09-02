@@ -6,3 +6,11 @@ $(function () {
         return false;
     });
 });
+
+$('.gridImage').bind('contextmenu', function(e){
+
+alert("We're sorry. Right-Click is not available");
+
+return false;
+
+});
